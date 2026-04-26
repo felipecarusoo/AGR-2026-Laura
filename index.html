@@ -1,60 +1,227 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Sustentável - 2030</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2026 | Agro forte, futuro sustentavel</title>
+  <meta name="description" content="Projeto de programacao para o Concurso Agrinho 2026, com foco em sustentabilidade, preservacao e conservacao ambiental.">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="cabecalho-site">
+    <nav id="menu-principal" class="container menu-navegacao" aria-label="Menu principal">
+      <a href="#inicio" class="marca-site" aria-label="A agronomia em 2030">
+        <span class="logo-agro-icone" aria-hidden="true"></span>
+        <span>AGRINHO 2026</span>
+      </a>
+      <button id="botao-menu-mobile" class="botao-menu-mobile" aria-expanded="false" aria-controls="lista-menu">Menu</button>
+      <ul id="lista-menu" class="lista-menu">
+        <li><a href="#inicio" class="link-menu">Inicio</a></li>
+        <li><a href="#ods" class="link-menu">O papel das ODS</a></li>
+        <li><a href="#compromisso" class="link-menu">Compromisso</a></li>
+        <li><a href="#agricultura-familiar" class="link-menu">Agricultura familiar</a></li>
+        <li><a href="#producao-consciente" class="link-menu">Producao consciente</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="cabecalho">
-        <div class="caixa">
-            <div class="logo">
-                <img src="#" alt="Logo Agro Sustentável">
-            </div>
-            <nav class="menu-navegacao">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato" class="botoes-cabecalho">Junte-se a nós</a></li>
-                </ul>
-            </nav>
+  <section id="inicio" class="hero-principal" data-categoria="preservacao">
+    <div class="container hero-grade">
+      <div class="hero-conteudo">
+        <h2 class="subtitulo-hero">A agronomia em 2030</h2>
+        <h1 class="titulo-hero">Bem vindo ao agro sustentavel</h1>
+        <p class="descricao-hero">
+          Aonde voce entende como as <strong>energias renovaveis</strong> e a <strong>producao consciente</strong>
+          impactam o nosso futuro.
+        </p>
+        <a href="#ods" class="botao-hero">Explorar conteudos</a>
+      </div>
+      <div class="carrossel-banner" aria-label="Imagens marcantes do projeto">
+        <figure class="slide-banner ativo">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80" alt="Plantacao organizada em area rural">
+          <figcaption>Producao com planejamento e responsabilidade ambiental.</figcaption>
+        </figure>
+        <figure class="slide-banner">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=80" alt="Veado em floresta preservada">
+          <figcaption>Biodiversidade protegida para as futuras geracoes.</figcaption>
+        </figure>
+        <figure class="slide-banner">
+          <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1400&q=80" alt="Cidade com area verde ao amanhecer">
+          <figcaption>Campo e cidade em equilibrio para um desenvolvimento sustentavel.</figcaption>
+        </figure>
+        <div class="controles-carrossel">
+          <button id="botao-slide-anterior" class="botao-carrossel" aria-label="Slide anterior">‹</button>
+          <button id="botao-slide-proximo" class="botao-carrossel" aria-label="Proximo slide">›</button>
         </div>
-    </header>
+        <div id="indicadores-slide" class="indicadores-slide" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section id="inicio" class="#">
-            <div class="#">
-                
-                <article class="#">
-                    <p class="subtitulos-h2">A agronomia em 2030</p>
-                    <h1>Bem vindo ao <strong>agro sustentável</strong></h1>
-                    <p class="descricoes">
-                        Aonde você entende como as <strong>energias renováveis</strong> 
-                        e a <strong>produção consciente</strong> impactam o nosso <a href="#">futuro</a>.
-                    </p>
-                </article>
+  <main class="container conteudo-principal">
+    <section class="secao">
+      <article id="ods" class="bloco-ods" data-categoria="economia">
+        <div class="ods-introducao">
+          <h2 class="titulo-secao">O papel das ODS no desenvolvimento do agronegocio</h2>
+          <p>
+            As ODS (Objetivos de Desenvolvimento Sustentavel) funcionam como uma bussola para o agronegocio
+            moderno, equilibrando produtividade com responsabilidade ambiental, social e economica.
+          </p>
+          <p>
+            No campo, essa aplicacao acontece em diferentes niveis: enquanto alguns objetivos impactam diretamente
+            a operacao, como o uso inteligente de agua, solo e energia, outros atuam de forma indireta, mas
+            igualmente essencial, ao fortalecer comunidades locais, educacao e equidade.
+          </p>
+          <p>
+            No ecossistema rural, tudo esta conectado. Ao adotar essas diretrizes, o setor nao apenas aumenta
+            sua competitividade global, mas tambem preserva os recursos necessarios para continuar produzindo
+            com qualidade no futuro.
+          </p>
+        </div>
+        <article class="painel-ods">
+          <h3 class="titulo-painel-ods">Painel das 17 ODS</h3>
+          <p class="texto-painel-ods">Passe o mouse para colorir. Clique no card para fixar e ler a explicacao da ODS.</p>
+          <div id="grade-ods-visual" class="grade-ods-visual" aria-label="Painel visual das 17 ODS"></div>
+        </article>
+      </article>
+    </section>
 
-                <aside class="#">
-                    <div class="#">
-                        <img src="#" alt="Plantação verde" class="#">
-                        <span class="#">carrossel de imagens</span>
-                    </div>
-                </aside>
+    <section id="compromisso" class="secao secao-compromisso">
+      <h2 class="titulo-secao titulo-compromisso">O nosso compromisso com as proximas geracoes</h2>
+      <div class="grade-compromisso">
+        <article class="bloco-imagem-compromisso animar-entrada-esquerda">
+          <img id="imagem-principal-compromisso" class="imagem-compromisso" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80" alt="Pessoas plantando mudas">
+        </article>
+        <article class="painel-compromisso animar-entrada-direita">
+          <div class="lista-pilares">
+            <article class="cartao-info">
+              <h3>Meio Ambiente</h3>
+              <p>Garantir um futuro sustentavel exige proteger o meio ambiente e conservar recursos naturais para as proximas geracoes.</p>
+            </article>
+            <article class="cartao-info">
+              <h3>Justica Social</h3>
+              <p>Nosso compromisso inclui preservar o patrimonio cultural e promover condicoes justas para que as comunidades rurais vivam com dignidade.</p>
+            </article>
+            <article class="cartao-info">
+              <h3>Economia Sustentavel</h3>
+              <p>Acoes presentes, como consumo consciente e educacao, fortalecem uma economia responsavel e resiliente para o futuro.</p>
+            </article>
+          </div>
+          <article class="cartao-acao-compromisso">
+            <p>
+              O compromisso com as proximas geracoes envolve garantir um futuro sustentavel, protegendo o meio ambiente,
+              preservando o patrimonio cultural e promovendo justica social e economica.
+            </p>
+          </article>
+          <div class="galeria-acoes" aria-label="Galeria de acoes sustentaveis">
+            <button class="miniatura-compromisso ativa" data-imagem-grande="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80" data-alt-grande="Pessoas plantando mudas" aria-label="Exibir imagem de pessoas plantando mudas">
+              <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=500&q=80" alt="">
+            </button>
+            <button class="miniatura-compromisso" data-imagem-grande="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1400&q=80" data-alt-grande="Separacao de residuos reciclaveis" aria-label="Exibir imagem de separacao de residuos">
+              <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=500&q=80" alt="">
+            </button>
+            <button class="miniatura-compromisso" data-imagem-grande="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=1400&q=80" data-alt-grande="Pessoa regando plantacao com cuidado" aria-label="Exibir imagem de rega consciente">
+              <img src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=500&q=80" alt="">
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            </div>
-        </section>
+    <section id="agricultura-familiar" class="secao secao-agricultura-familiar">
+      <h2 class="titulo-secao titulo-agricultura-familiar">Agricultura familiar e sustentabilidade</h2>
+      <p class="texto-intro-agricultura-familiar">
+        A agricultura familiar tem papel essencial no equilibrio entre producao e meio ambiente, fortalecendo a seguranca alimentar,
+        a economia local e a conservacao dos recursos naturais.
+      </p>
+      <div class="grade-agricultura-familiar">
+        <article class="cartao-agricultura">
+          <h3>Producao local responsavel</h3>
+          <p>Com manejo mais proximo da realidade do territorio, familias produtoras preservam o solo, reduzem desperdicios e valorizam a biodiversidade.</p>
+          <span class="tag-ods">ODS 2 e ODS 12</span>
+        </article>
+        <article class="cartao-agricultura">
+          <h3>Renda e permanencia no campo</h3>
+          <p>A atividade familiar gera trabalho, melhora a renda e ajuda jovens e adultos a permanecerem no meio rural com dignidade e perspectiva.</p>
+          <span class="tag-ods">ODS 8 e ODS 10</span>
+        </article>
+        <article class="cartao-agricultura">
+          <h3>Alimentos saudaveis para todos</h3>
+          <p>A diversidade produtiva da agricultura familiar amplia o acesso a alimentos de qualidade e aproxima consumidores de praticas mais conscientes.</p>
+          <span class="tag-ods">ODS 2 e ODS 3</span>
+        </article>
+      </div>
+    </section>
 
-        <section class="#">
-            <div class="#">
-                <h2>O nosso compromisso com as próximas...</h2>
-                </div>
-        </section>
-    </main>
+    <section id="pilares-futuro" class="secao secao-pilares-futuro">
+      <div class="grade-pilares-futuro">
+        <article class="painel-pilares-futuro animar-entrada-esquerda">
+          <h2>Pilares do Compromisso com o Futuro:</h2>
+          <ul>
+            <li>Sustentabilidade Ambiental</li>
+            <li>Educacao e Cultura</li>
+            <li>Desenvolvimento Sustentavel</li>
+            <li>Responsabilidade Social</li>
+            <li>Gestao Etica</li>
+          </ul>
+          <p>
+            A responsabilidade e compartilhada entre governos, empresas e individuos, focando na construcao de um legado
+            positivo e na preservacao da vida a longo prazo.
+          </p>
+        </article>
+        <article class="imagem-pilares-futuro animar-entrada-direita">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80" alt="Pessoa segurando painel digital com tecnologia no agro">
+        </article>
+      </div>
+    </section>
 
-    <footer>
-        </footer>
+    <section id="producao-consciente" class="secao secao-producao-consciente">
+      <div class="grade-producao-consciente">
+        <article class="bloco-imagem-producao animar-entrada-esquerda">
+          <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1400&q=80" alt="Trator aplicando tecnologia no campo">
+        </article>
+        <article class="bloco-texto-producao animar-entrada-direita">
+          <h2 class="titulo-secao titulo-producao-consciente">Entendendo o papel da producao consciente na agricultura</h2>
+          <h3 class="subtitulo-producao-consciente">Os beneficios das praticas agricolas sustentaveis?</h3>
+          <p>
+            Praticas sustentaveis promovem a conservacao do solo, melhoram a eficiencia hidrica e fortalecem a biodiversidade.
+            Com isso, a producao rural se torna mais resiliente as mudancas climaticas e reduz custos com insumos ao longo do tempo.
+          </p>
+          <p>
+            Essas tecnicas valorizam a propriedade, aumentam a produtividade de forma responsavel e contribuem para uma cadeia
+            agricola mais segura, competitiva e alinhada ao futuro.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <aside id="painel-acessibilidade" class="painel-acessibilidade" aria-label="Recursos de acessibilidade">
+    <h2>Acessibilidade</h2>
+    <div class="acoes-acessibilidade">
+      <button id="botao-tema" class="botao-acessibilidade">Tema escuro</button>
+      <button id="botao-alto-contraste" class="botao-acessibilidade">Alto contraste</button>
+      <button id="botao-fonte-aumentar" class="botao-acessibilidade">A+ fonte</button>
+      <button id="botao-fonte-diminuir" class="botao-acessibilidade">A- fonte</button>
+      <button id="botao-reduzir-movimento" class="botao-acessibilidade">Reduzir movimento</button>
+      <button id="botao-alertas-visuais" class="botao-acessibilidade">Alertas visuais</button>
+    </div>
+    <p class="texto-acessibilidade">
+      Este site nao depende de audio para navegacao. Todas as acoes possuem retorno visual e textual.
+    </p>
+  </aside>
+
+  <footer class="rodape-site">
+    <div class="container conteudo-rodape">
+      <p>Projeto Agrinho 2026 - Categoria Programacao</p>
+      <p>Tecnologias: HTML5, CSS puro e JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="botao-topo" class="botao-topo oculto" aria-label="Voltar ao topo">Topo</button>
+  <button id="botao-abrir-acessibilidade" class="botao-abrir-acessibilidade" aria-controls="painel-acessibilidade" aria-expanded="false">Acessibilidade</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,538 @@
+.topo-praticas {
+  margin-bottom: 0.8rem;
+}
+
+.secao-compromisso {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #edfdd7 0%, #e5f8cd 52%, #d8efbf 100%);
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -10px 20px rgba(33, 70, 30, 0.08);
+  padding: 1rem clamp(1rem, 2vw, 2rem);
+}
+
+.titulo-compromisso {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grade-compromisso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.bloco-imagem-compromisso {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.imagem-compromisso {
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.painel-compromisso {
+  border: 2px solid #1b6f9a;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lista-pilares {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cartao-info {
+  background: transparent;
+}
+
+.cartao-info h3 {
+  margin: 0 0 0.2rem;
+  color: var(--verde-escuro);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.18rem);
+  line-height: 1.3;
+  text-align: left;
+}
+
+.cartao-info p {
+  margin: 0;
+  color: var(--texto-principal);
+  font-size: var(--fonte-texto);
+  line-height: 1.72;
+  text-align: justify;
+}
+
+.cartao-info ul {
+  margin: 0.2rem 0 0.65rem;
+  padding-left: 1.2rem;
+}
+
+.cartao-info li {
+  margin: 0.22rem 0;
+  font-size: clamp(1.02rem, 0.98rem + 0.2vw, 1.12rem);
+  line-height: 1.45;
+}
+
+.cartao-acao-compromisso {
+  margin-top: 0.75rem;
+  border-top: 1px dashed #89b8cc;
+  padding-top: 0.65rem;
+}
+
+.cartao-acao-compromisso p {
+  margin: 0;
+  color: var(--texto-principal);
+  font-size: var(--fonte-texto);
+  line-height: 1.72;
+  text-align: justify;
+}
+
+.cartao-acao-compromisso h3 {
+  margin: 0 0 0.35rem;
+  color: var(--verde-escuro);
+  text-align: left;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.12rem);
+}
+
+.cartao-acao-compromisso ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.cartao-acao-compromisso li {
+  margin: 0.22rem 0;
+  font-size: var(--fonte-texto-pequeno);
+  line-height: 1.5;
+}
+
+.secao-agricultura-familiar {
+  width: 100vw;
+  margin-top: 0.7rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #ebfcd4 0%, #e2f6c8 50%, #d4ecb8 100%);
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(40, 78, 33, 0.08);
+  padding: 1rem clamp(1rem, 2vw, 2rem);
+}
+
+.titulo-agricultura-familiar {
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.texto-intro-agricultura-familiar {
+  margin: 0 auto 0.9rem;
+  max-width: 95ch;
+  text-align: justify;
+  color: #111111;
+  font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.22rem);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.grade-agricultura-familiar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.cartao-agricultura {
+  background: #f4faeb;
+  border: 1px solid #c8e0b7;
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.cartao-agricultura h3 {
+  margin: 0 0 0.35rem;
+  color: var(--verde-escuro);
+  text-align: center;
+  font-size: clamp(1.14rem, 1.04rem + 0.3vw, 1.34rem);
+  line-height: 1.3;
+}
+
+.cartao-agricultura p {
+  margin: 0;
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.12rem);
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.tag-ods {
+  display: inline-block;
+  margin-top: 0.5rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.48rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #0f7f3b;
+  color: #ffffff;
+}
+
+.secao-pilares-futuro {
+  width: 100vw;
+  margin-top: 0.2rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #ebfcd5 0%, #e3f7cb 52%, #d7efbe 100%);
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(39, 77, 32, 0.08);
+  padding: 1rem clamp(1rem, 2vw, 2rem);
+}
+
+.grade-pilares-futuro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.painel-pilares-futuro {
+  border: 2px solid #1b6f9a;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 1rem;
+}
+
+.painel-pilares-futuro h2 {
+  margin: 0 0 0.45rem;
+  color: var(--verde-escuro);
+  font-size: clamp(1.35rem, 1.2rem + 0.55vw, 1.8rem);
+  line-height: 1.25;
+}
+
+.painel-pilares-futuro ul {
+  margin: 0.3rem 0 0.7rem;
+  padding-left: 1.2rem;
+}
+
+.painel-pilares-futuro li {
+  margin: 0.22rem 0;
+  color: var(--texto-principal);
+  font-size: clamp(1.08rem, 1rem + 0.28vw, 1.24rem);
+  line-height: 1.42;
+}
+
+.painel-pilares-futuro p {
+  margin: 0;
+  color: var(--texto-principal);
+  font-size: var(--fonte-texto);
+  line-height: 1.72;
+  text-align: justify;
+  font-weight: 700;
+}
+
+.imagem-pilares-futuro img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.secao-solucoes-energeticas {
+  width: 100vw;
+  margin-top: 1rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #eafbd2 0%, #e0f4c4 52%, #d2e8b3 100%);
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(39, 77, 32, 0.08);
+  padding: 1rem clamp(1rem, 2vw, 2rem);
+}
+
+.grade-solucoes-energeticas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.painel-solucoes-energeticas {
+  border: 2px solid #1b6f9a;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 1rem;
+}
+
+.painel-solucoes-energeticas h2 {
+  margin: 0 0 0.55rem;
+  color: var(--verde-escuro);
+  font-size: clamp(1.3rem, 1.15rem + 0.55vw, 1.75rem);
+  line-height: 1.24;
+}
+
+.painel-solucoes-energeticas h3 {
+  margin: 0 0 0.45rem;
+  color: var(--verde-escuro);
+  font-size: clamp(1.15rem, 1.05rem + 0.32vw, 1.35rem);
+  line-height: 1.32;
+}
+
+.painel-solucoes-energeticas p {
+  margin: 0;
+  color: var(--texto-principal);
+  font-size: var(--fonte-texto);
+  line-height: 1.68;
+  text-align: justify;
+}
+
+.imagem-solucoes-energeticas img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.secao-beneficios-sustentavel {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #8aac69 0%, #7ca05b 45%, #6f944f 100%);
+  padding: 1.5rem clamp(1rem, 2vw, 2rem);
+}
+
+.conteudo-beneficios-sustentavel {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+}
+
+.titulo-beneficios-sustentavel {
+  margin: 0 0 1rem;
+  text-align: center;
+  color: #162a12;
+  text-transform: uppercase;
+}
+
+.grade-beneficios-sustentavel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cartao-beneficio {
+  background: #6f3a12;
+  border-radius: 16px;
+  padding: 1rem 0.95rem 0.85rem;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cartao-beneficio h3 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.2rem, 1.1rem + 0.35vw, 1.45rem);
+  line-height: 1.28;
+}
+
+.cartao-beneficio p {
+  margin: 0;
+  font-size: clamp(1.03rem, 0.98rem + 0.2vw, 1.16rem);
+  line-height: 1.55;
+  font-weight: 700;
+  text-align: center;
+}
+
+.botao-beneficio {
+  margin: 0.8rem auto 0;
+  width: 56px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: #a68a24;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.botao-beneficio:hover,
+.botao-beneficio:focus-visible {
+  background: #8c741b;
+  outline: none;
+}
+
+.secao-pesquisa-praticas {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #e4ffc4 0%, #daf6b5 52%, #c7e89f 100%);
+  padding: 1.5rem clamp(1rem, 2vw, 2rem);
+}
+
+.grade-pesquisa-praticas {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.bloco-texto-pesquisa {
+  border: 2px solid #1b6f9a;
+  border-radius: 14px;
+  background: #e8ffca;
+  min-height: 360px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bloco-texto-pesquisa h2 {
+  margin: 0 0 0.55rem;
+  color: #162a12;
+  font-size: clamp(1.3rem, 1.15rem + 0.55vw, 1.75rem);
+  line-height: 1.24;
+}
+
+.bloco-texto-pesquisa p {
+  margin: 0 0 1rem;
+  color: #192414;
+  font-size: clamp(1.25rem, 1.13rem + 0.35vw, 1.5rem);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.botao-participar-pesquisa {
+  align-self: center;
+  border: 1px solid #7f3a1f;
+  border-radius: 10px;
+  background: #7f3a1f;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.55rem 0.9rem;
+}
+
+.botao-participar-pesquisa:hover,
+.botao-participar-pesquisa:focus-visible {
+  background: #652c14;
+  outline: none;
+}
+
+.bloco-imagem-pesquisa img {
+  width: 100%;
+  height: 480px;
+  min-height: 480px;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(126, 79, 168, 0.45);
+}
+
+.secao-producao-consciente {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(180deg, #87aa64 0%, #5f8547 42%, #355528 100%);
+  border-radius: 0;
+  padding: 1.45rem clamp(1rem, 2vw, 2rem);
+}
+
+.grade-producao-consciente {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+}
+
+.bloco-imagem-producao img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.bloco-texto-producao {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 0.25rem 0;
+}
+
+.titulo-producao-consciente {
+  margin-bottom: 0.45rem;
+  color: #ffffff;
+  font-size: clamp(1.65rem, 1.35rem + 1vw, 2.3rem);
+}
+
+.subtitulo-producao-consciente {
+  margin: 0 0 0.45rem;
+  color: #ffffff;
+  font-size: clamp(1.18rem, 1.07rem + 0.35vw, 1.42rem);
+  line-height: 1.35;
+}
+
+.bloco-texto-producao p {
+  margin: 0 0 0.55rem;
+  color: #ffffff;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.12rem);
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.bloco-texto-producao p:last-child {
+  margin-bottom: 0;
+}
+
+.galeria-acoes {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.miniatura-compromisso {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.miniatura-compromisso:hover,
+.miniatura-compromisso:focus-visible {
+  border-color: #1b6f9a;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.miniatura-compromisso.ativa {
+  border-color: #0f7f3b;
+}
+
+.miniatura-compromisso img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #b9d6e5;
+}

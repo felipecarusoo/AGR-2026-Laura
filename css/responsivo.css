@@ -1,0 +1,240 @@
+@media (max-width: 980px) {
+  .conteudo-principal {
+    padding-block: 0.85rem 1.6rem;
+  }
+
+  .secao {
+    margin-bottom: 1.45rem;
+  }
+
+  .hero-grade {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .bloco-destaque {
+    grid-template-columns: 1fr;
+  }
+
+  .carrossel-banner {
+    min-height: 280px;
+  }
+
+  .grade-cards-conteudo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grade-ods-visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .ods-item-visual {
+    min-height: 165px;
+  }
+
+  .conteudo-rodape {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-programa-rodape {
+    justify-self: start;
+  }
+
+  .conteudo-convite-futuro {
+    min-height: 230px;
+  }
+
+  .grade-compromisso,
+  .grade-agricultura-familiar,
+  .grade-pilares-futuro,
+  .grade-solucoes-energeticas,
+  .grade-beneficios-sustentavel,
+  .grade-pesquisa-praticas,
+  .grade-producao-consciente {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-compromisso {
+    min-height: 300px;
+  }
+
+  .miniatura-compromisso img {
+    height: 82px;
+  }
+
+  .imagem-pilares-futuro img,
+  .imagem-solucoes-energeticas img {
+    min-height: 300px;
+  }
+
+  .cartao-beneficio {
+    min-height: 280px;
+  }
+
+  .bloco-imagem-pesquisa img {
+    min-height: 260px;
+    max-height: 300px;
+  }
+
+  .bloco-imagem-producao img {
+    min-height: 290px;
+  }
+}
+
+@media (max-width: 760px) {
+  .conteudo-principal {
+    padding-block: 0.75rem 1.2rem;
+  }
+
+  .secao {
+    margin-bottom: 1.15rem;
+  }
+
+  .botao-menu-mobile {
+    display: inline-block;
+  }
+
+  .lista-menu {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 64px;
+    background: var(--verde-principal);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 0.6rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+
+  .lista-menu.menu-fechado {
+    display: none;
+  }
+
+  .grade-cards-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-ods-visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .ods-item-visual {
+    min-height: 152px;
+  }
+
+  .box-flutuante-ods {
+    font-size: clamp(0.84rem, 0.8rem + 0.22vw, 0.96rem);
+    line-height: 1.32;
+  }
+
+  .conteudo-rodape {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .marca-rodape {
+    justify-self: center;
+  }
+
+  .logo-programa-rodape {
+    justify-self: center;
+  }
+
+  .botao-topo {
+    right: 0.5rem;
+    width: 38px;
+    height: 38px;
+    font-size: 1.08rem;
+    bottom: 0.65rem;
+  }
+
+  .secao-convite-futuro {
+    padding-block: 1rem;
+  }
+
+  .conteudo-convite-futuro {
+    min-height: 200px;
+  }
+
+  .titulo-convite-futuro {
+    max-width: 100%;
+  }
+
+  .descricao-convite-futuro {
+    margin-bottom: 0.75rem;
+  }
+
+  .painel-compromisso,
+  .painel-pilares-futuro,
+  .painel-solucoes-energeticas {
+    padding: 0.85rem;
+  }
+
+  .imagem-compromisso,
+  .imagem-pilares-futuro img,
+  .imagem-solucoes-energeticas img {
+    min-height: 240px;
+  }
+
+  .galeria-acoes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .miniatura-compromisso img {
+    height: 120px;
+  }
+
+  .painel-pilares-futuro h2 {
+    margin-bottom: 0.35rem;
+  }
+
+  .painel-pilares-futuro ul {
+    margin: 0.2rem 0 0.5rem;
+  }
+
+  .painel-solucoes-energeticas h2 {
+    margin-bottom: 0.42rem;
+  }
+
+  .painel-solucoes-energeticas h3 {
+    margin-bottom: 0.35rem;
+  }
+
+  .secao-beneficios-sustentavel {
+    padding-block: 1.15rem;
+  }
+
+  .titulo-beneficios-sustentavel {
+    margin-bottom: 0.75rem;
+  }
+
+  .cartao-beneficio {
+    padding: 0.9rem 0.8rem 0.75rem;
+  }
+
+  .secao-pesquisa-praticas {
+    padding-block: 1.1rem;
+  }
+
+  .bloco-texto-pesquisa {
+    padding: 0.85rem;
+  }
+
+  .bloco-texto-pesquisa h2 {
+    font-size: clamp(1.7rem, 1.55rem + 0.8vw, 2.2rem);
+  }
+
+  .bloco-texto-pesquisa p {
+    font-size: clamp(1.02rem, 0.96rem + 0.3vw, 1.2rem);
+    line-height: 1.5;
+  }
+
+  .bloco-imagem-pesquisa img {
+    min-height: 220px;
+    max-height: 250px;
+  }
+}

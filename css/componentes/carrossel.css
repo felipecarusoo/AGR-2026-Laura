@@ -1,0 +1,117 @@
+.carrossel-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  min-height: clamp(340px, 60vh, 640px);
+  box-shadow: var(--sombra-card);
+  background: #103f21;
+}
+
+.slide-banner {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transform: scale(1.01);
+  transition: opacity 0.45s ease;
+}
+
+.slide-banner img {
+  height: 100%;
+  border-radius: 14px;
+  filter: saturate(1.02) contrast(1.02);
+}
+
+.slide-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.2) 32%,
+    rgba(0, 0, 0, 0.04) 58%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+  pointer-events: none;
+}
+
+.slide-banner figcaption {
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 1.8rem;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: 10px;
+  padding: 0.58rem 0.75rem;
+  font-weight: 700;
+  font-size: var(--fonte-texto-pequeno);
+  line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.slide-banner.ativo {
+  opacity: 1;
+}
+
+.controles-carrossel {
+  position: absolute;
+  top: 50%;
+  left: 0.45rem;
+  right: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.botao-carrossel {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.68);
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.botao-carrossel:hover,
+.botao-carrossel:focus-visible {
+  background: rgba(0, 0, 0, 0.85);
+  outline: none;
+}
+
+.indicadores-slide {
+  position: absolute;
+  left: 50%;
+  bottom: 0.45rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.38rem;
+}
+
+.indicador-slide {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.48);
+  cursor: pointer;
+}
+
+.indicador-slide.ativo {
+  background: #ffe270;
+}

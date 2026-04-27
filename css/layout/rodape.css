@@ -1,0 +1,95 @@
+.rodape-site {
+  background: var(--verde-escuro);
+  color: var(--texto-claro);
+  padding: 1rem 0 0.75rem;
+}
+
+.conteudo-rodape {
+  display: grid;
+  grid-template-columns: auto 1.35fr 1fr auto;
+  gap: 0.8rem 1.15rem;
+  align-items: center;
+}
+
+.marca-rodape {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--texto-claro);
+  font-weight: 800;
+  font-size: clamp(0.98rem, 0.94rem + 0.14vw, 1.06rem);
+}
+
+.bloco-rodape h3 {
+  margin: 0 0 0.3rem;
+  font-size: clamp(1.05rem, 1rem + 0.2vw, 1.2rem);
+  line-height: 1.2;
+}
+
+.bloco-rodape p,
+.bloco-rodape a {
+  margin: 0.12rem 0;
+  color: #ffffff;
+  font-size: clamp(1.02rem, 0.98rem + 0.16vw, 1.12rem);
+  line-height: 1.35;
+}
+
+.bloco-redes a {
+  display: block;
+  text-decoration: none;
+}
+
+.bloco-redes a:hover,
+.bloco-redes a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.logo-programa-rodape {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #9fd6ff 0 35%, #4fb2d9 36% 100%);
+  color: #0b3c52;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.assinatura-rodape,
+.tecnologias-rodape {
+  margin: 0.5rem 0 0;
+  text-align: center;
+  font-size: clamp(0.95rem, 0.9rem + 0.12vw, 1.02rem);
+}
+
+.tecnologias-rodape {
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+
+.botao-topo {
+  border: 1px solid var(--verde-principal);
+  background: var(--verde-principal);
+  color: var(--texto-claro);
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.28rem;
+  line-height: 1;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  z-index: 1002;
+  bottom: 1rem;
+}

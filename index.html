@@ -5,8 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agrinho 2026 | Agro forte, futuro sustentavel</title>
   <meta name="description" content="Projeto de programacao para o Concurso Agrinho 2026, com foco em sustentabilidade, preservacao e conservacao ambiental.">
+  <!-- Base -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="css/layout/cabecalho.css">
+  <link rel="stylesheet" href="css/layout/rodape.css">
+
+  <!-- Componentes -->
+  <link rel="stylesheet" href="css/componentes/carrossel.css">
+  <link rel="stylesheet" href="css/componentes/ods.css">
+  <link rel="stylesheet" href="css/componentes/cards-conteudo.css">
+  <link rel="stylesheet" href="css/componentes/convite-final.css">
+
+  <!-- Paginas -->
+  <link rel="stylesheet" href="css/paginas/index-secoes.css">
+
+  <!-- Responsivo -->
+  <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
   <header class="cabecalho-site">
@@ -195,32 +212,113 @@
         </article>
       </div>
     </section>
-  </main>
 
-  <aside id="painel-acessibilidade" class="painel-acessibilidade" aria-label="Recursos de acessibilidade">
-    <h2>Acessibilidade</h2>
-    <div class="acoes-acessibilidade">
-      <button id="botao-tema" class="botao-acessibilidade">Tema escuro</button>
-      <button id="botao-alto-contraste" class="botao-acessibilidade">Alto contraste</button>
-      <button id="botao-fonte-aumentar" class="botao-acessibilidade">A+ fonte</button>
-      <button id="botao-fonte-diminuir" class="botao-acessibilidade">A- fonte</button>
-      <button id="botao-reduzir-movimento" class="botao-acessibilidade">Reduzir movimento</button>
-      <button id="botao-alertas-visuais" class="botao-acessibilidade">Alertas visuais</button>
-    </div>
-    <p class="texto-acessibilidade">
-      Este site nao depende de audio para navegacao. Todas as acoes possuem retorno visual e textual.
-    </p>
-  </aside>
+    <section id="solucoes-energeticas" class="secao secao-solucoes-energeticas">
+      <div class="grade-solucoes-energeticas">
+        <article class="painel-solucoes-energeticas animar-entrada-esquerda">
+          <h2>Solucoes energeticas inovadoras impulsionando a agricultura sustentavel.</h2>
+          <h3>Energia sustentavel para o sucesso na agricultura</h3>
+          <p>
+            A energia sustentavel, com destaque para a <strong>solar fotovoltaica</strong>, tornou-se um pilar fundamental
+            para o sucesso e a competitividade na agricultura moderna.
+            A transicao para fontes limpas permite a <strong>reducao drastica dos custos operacionais</strong>,
+            <strong>aumento da eficiencia produtiva</strong> e conformidade com praticas ambientais, sociais e de governanca.
+          </p>
+        </article>
+        <article class="imagem-solucoes-energeticas animar-entrada-direita">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=80" alt="Painel solar em area agricola representando energia limpa no campo">
+        </article>
+      </div>
+    </section>
+
+    <section id="beneficios-sustentavel" class="secao secao-beneficios-sustentavel">
+      <div class="container conteudo-beneficios-sustentavel">
+        <h2 class="titulo-secao titulo-beneficios-sustentavel">Beneficios de uma agricultura sustentavel</h2>
+        <div class="grade-beneficios-sustentavel">
+          <article class="cartao-beneficio animar-entrada-esquerda">
+            <h3>Preservacao do meio ambiente</h3>
+            <p>
+              Reduz a degradacao do solo, a poluicao da agua e o desmatamento, mantendo os recursos naturais para o futuro.
+            </p>
+            <button class="botao-beneficio" aria-label="Ver mais sobre preservacao do meio ambiente">➜</button>
+          </article>
+          <article class="cartao-beneficio animar-entrada-direita">
+            <h3>Conservacao dos recursos naturais</h3>
+            <p>
+              A agricultura sustentavel usa agua e solo de forma consciente, evitando desperdicios e garantindo sua
+              preservacao para o futuro.
+            </p>
+            <button class="botao-beneficio" aria-label="Ver mais sobre conservacao dos recursos naturais">➜</button>
+          </article>
+          <article class="cartao-beneficio animar-entrada-esquerda">
+            <h3>Sustentabilidade economica</h3>
+            <p>
+              A longo prazo, reduz custos de producao e garante a produtividade da terra por mais tempo, beneficiando os
+              agricultores.
+            </p>
+            <button class="botao-beneficio" aria-label="Ver mais sobre sustentabilidade economica">➜</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pesquisa-praticas" class="secao secao-pesquisa-praticas">
+      <div class="grade-pesquisa-praticas">
+        <article class="bloco-texto-pesquisa animar-entrada-esquerda">
+          <h2>Pesquisa sobre praticas sustentaveis</h2>
+          <p>
+            Pesquisas recentes indicam que cerca de 6 a 8 em cada 10 brasileiros adotam praticas sustentaveis no dia a dia,
+            com maior engajamento entre mulheres e pessoas com mais de 60 anos. As acoes mais comuns incluem reciclagem,
+            reducao do consumo de energia e compra de produtos sustentaveis, impulsionadas pela conscientizacao ambiental.
+          </p>
+          <a id="botao-participar-pesquisa" class="botao-participar-pesquisa" href="#" target="_blank" rel="noopener noreferrer">
+            Participar da pesquisa
+          </a>
+        </article>
+        <article class="bloco-imagem-pesquisa animar-entrada-direita">
+          <img src="https://images.unsplash.com/photo-1579165466949-3180a3d056d5?auto=format&fit=crop&w=1400&q=80" alt="Pessoa pesquisadora analisando amostra para praticas sustentaveis">
+        </article>
+      </div>
+    </section>
+
+    <section id="convite-futuro" class="secao secao-convite-futuro">
+      <div class="container conteudo-convite-futuro">
+        <p class="rotulo-convite-futuro">Agronomia Forte</p>
+        <h2 class="titulo-convite-futuro">Junte-se a nos na construcao de um futuro sustentavel!</h2>
+        <p class="descricao-convite-futuro">Participe da pesquisa e ajude a transformar dados em acoes sustentaveis no campo.</p>
+        <a class="link-convite-futuro" href="#pesquisa-praticas">Participar da pesquisa</a>
+      </div>
+    </section>
+  </main>
 
   <footer class="rodape-site">
     <div class="container conteudo-rodape">
-      <p>Projeto Agrinho 2026 - Categoria Programacao</p>
-      <p>Tecnologias: HTML5, CSS puro e JavaScript</p>
+      <a href="#inicio" class="marca-rodape" aria-label="Voltar ao inicio">
+        <span class="logo-agro-icone" aria-hidden="true"></span>
+        <span>AGRINHO 2026</span>
+      </a>
+
+      <div class="bloco-rodape bloco-contato">
+        <h3>Entre em contato:</h3>
+        <p>laura.brandalise.silva@escola.pr.gov.br</p>
+        <p>(42) 9 8808-6414</p>
+      </div>
+
+      <div class="bloco-rodape bloco-redes">
+        <h3>Redes sociais</h3>
+        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <div class="logo-programa-rodape" aria-label="Logo do programa">
+        <span>PROGRAMA</span>
+      </div>
     </div>
+    <p class="assinatura-rodape">Desenvolvido por Lauebs</p>
+    <p class="tecnologias-rodape">Tecnologias: HTML5, CSS puro e JavaScript</p>
   </footer>
 
-  <button id="botao-topo" class="botao-topo oculto" aria-label="Voltar ao topo">Topo</button>
-  <button id="botao-abrir-acessibilidade" class="botao-abrir-acessibilidade" aria-controls="painel-acessibilidade" aria-expanded="false">Acessibilidade</button>
+  <button id="botao-topo" class="botao-topo oculto" aria-label="Voltar ao inicio da pagina">↑</button>
 
   <script src="script.js"></script>
 </body>

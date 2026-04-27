@@ -63,7 +63,6 @@ const dadosOds = [
   { numero: 17, titulo: "Parcerias", direta: false, descricao: "Cooperacao entre escolas, produtores, governo e ciencia acelera resultados sustentaveis." }
 ];
 
-const elementoCorpo = document.body;
 const listaPraticasDinamica = document.getElementById("lista-praticas-dinamica");
 const gradeCardsConteudo = document.getElementById("grade-cards-conteudo");
 const botoesFiltro = document.querySelectorAll(".botao-filtro");
@@ -71,14 +70,6 @@ const blocosComCategoria = document.querySelectorAll("[data-categoria]");
 const botaoTopo = document.getElementById("botao-topo");
 const botaoMenuMobile = document.getElementById("botao-menu-mobile");
 const listaMenu = document.getElementById("lista-menu");
-const painelAcessibilidade = document.getElementById("painel-acessibilidade");
-const botaoAbrirAcessibilidade = document.getElementById("botao-abrir-acessibilidade");
-const botaoTema = document.getElementById("botao-tema");
-const botaoAltoContraste = document.getElementById("botao-alto-contraste");
-const botaoFonteAumentar = document.getElementById("botao-fonte-aumentar");
-const botaoFonteDiminuir = document.getElementById("botao-fonte-diminuir");
-const botaoReduzirMovimento = document.getElementById("botao-reduzir-movimento");
-const botaoAlertasVisuais = document.getElementById("botao-alertas-visuais");
 const slidesBanner = document.querySelectorAll(".slide-banner");
 const botaoSlideAnterior = document.getElementById("botao-slide-anterior");
 const botaoSlideProximo = document.getElementById("botao-slide-proximo");
@@ -86,8 +77,6 @@ const indicadoresSlide = document.getElementById("indicadores-slide");
 const gradeOdsVisual = document.getElementById("grade-ods-visual");
 
 let filtroAtual = "todos";
-let alertasVisuaisAtivos = false;
-let tamanhoFonteAtual = Number(localStorage.getItem("agrinho-fonte")) || 16;
 let indiceSlideAtual = 0;
 let intervaloCarrossel = null;
 const intervaloCarrosselMs = 2200;
@@ -139,22 +128,6 @@ function renderizarPainelOds() {
       card.click();
     });
   });
-}
-
-function salvarPreferencias() {
-  localStorage.setItem("agrinho-contraste", String(elementoCorpo.classList.contains("alto-contraste")));
-  localStorage.setItem("agrinho-escuro", String(elementoCorpo.classList.contains("tema-escuro")));
-  localStorage.setItem("agrinho-movimento", String(elementoCorpo.classList.contains("movimento-reduzido")));
-  localStorage.setItem("agrinho-alerta-visual", String(alertasVisuaisAtivos));
-  localStorage.setItem("agrinho-fonte", String(tamanhoFonteAtual));
-}
-
-function aplicarPreferenciasIniciais() {
-  if (localStorage.getItem("agrinho-contraste") === "true") elementoCorpo.classList.add("alto-contraste");
-  if (localStorage.getItem("agrinho-escuro") === "true") elementoCorpo.classList.add("tema-escuro");
-  if (localStorage.getItem("agrinho-movimento") === "true") elementoCorpo.classList.add("movimento-reduzido");
-  alertasVisuaisAtivos = localStorage.getItem("agrinho-alerta-visual") === "true";
-  document.documentElement.style.setProperty("--tamanho-fonte-base", `${tamanhoFonteAtual}px`);
 }
 
 function criarItemPratica(item) {
@@ -219,10 +192,6 @@ function ativarEventosSaibaMais() {
     botao.textContent = estaExpandido ? "Saiba mais" : "Recolher";
     botao.setAttribute("aria-expanded", estaExpandido ? "false" : "true");
 
-    if (alertasVisuaisAtivos) {
-      cartao.classList.add("destaque-visual");
-      setTimeout(() => cartao.classList.remove("destaque-visual"), 700);
-    }
   });
 }
 
@@ -274,50 +243,6 @@ function configurarMenuMobile() {
   });
 }
 
-function configurarAcessibilidade() {
-  painelAcessibilidade.classList.add("painel-fechado");
-
-  botaoAbrirAcessibilidade.addEventListener("click", () => {
-    const fechado = painelAcessibilidade.classList.contains("painel-fechado");
-    painelAcessibilidade.classList.toggle("painel-fechado");
-    botaoAbrirAcessibilidade.setAttribute("aria-expanded", fechado ? "true" : "false");
-  });
-
-  botaoTema.addEventListener("click", () => {
-    elementoCorpo.classList.toggle("tema-escuro");
-    botaoTema.textContent = elementoCorpo.classList.contains("tema-escuro") ? "Tema claro" : "Tema escuro";
-    salvarPreferencias();
-  });
-
-  botaoAltoContraste.addEventListener("click", () => {
-    elementoCorpo.classList.toggle("alto-contraste");
-    salvarPreferencias();
-  });
-
-  botaoFonteAumentar.addEventListener("click", () => {
-    tamanhoFonteAtual = Math.min(tamanhoFonteAtual + 1, 22);
-    document.documentElement.style.setProperty("--tamanho-fonte-base", `${tamanhoFonteAtual}px`);
-    salvarPreferencias();
-  });
-
-  botaoFonteDiminuir.addEventListener("click", () => {
-    tamanhoFonteAtual = Math.max(tamanhoFonteAtual - 1, 14);
-    document.documentElement.style.setProperty("--tamanho-fonte-base", `${tamanhoFonteAtual}px`);
-    salvarPreferencias();
-  });
-
-  botaoReduzirMovimento.addEventListener("click", () => {
-    elementoCorpo.classList.toggle("movimento-reduzido");
-    salvarPreferencias();
-  });
-
-  botaoAlertasVisuais.addEventListener("click", () => {
-    alertasVisuaisAtivos = !alertasVisuaisAtivos;
-    botaoAlertasVisuais.textContent = alertasVisuaisAtivos ? "Alertas visuais: ON" : "Alertas visuais";
-    salvarPreferencias();
-  });
-}
-
 function atualizarSlides(indice) {
   slidesBanner.forEach((slide, posicao) => {
     slide.classList.toggle("ativo", posicao === indice);
@@ -338,10 +263,9 @@ function mudarSlide(direcao) {
 function iniciarCarrosselAutomatico() {
   if (!slidesBanner.length) return;
   clearInterval(intervaloCarrossel);
-  const duracaoAtual = elementoCorpo.classList.contains("movimento-reduzido") ? 6000 : intervaloCarrosselMs;
   intervaloCarrossel = setInterval(() => {
     mudarSlide(1);
-  }, duracaoAtual);
+  }, intervaloCarrosselMs);
 }
 
 function configurarCarrossel() {
@@ -452,8 +376,6 @@ function configurarGaleriaCompromisso() {
   iniciarRotacaoAutomatica();
 }
 
-aplicarPreferenciasIniciais();
-botaoTema.textContent = elementoCorpo.classList.contains("tema-escuro") ? "Tema claro" : "Tema escuro";
 renderizarPainelOds();
 renderizarConteudoDinamico();
 aplicarFiltro(filtroAtual);
@@ -462,7 +384,6 @@ ativarEventosFiltro();
 ativarScrollSuave();
 controlarBotaoTopo();
 configurarMenuMobile();
-configurarAcessibilidade();
 configurarCarrossel();
 configurarAnimacaoSecoes();
 configurarGaleriaCompromisso();

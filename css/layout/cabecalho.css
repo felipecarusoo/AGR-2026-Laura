@@ -1,0 +1,70 @@
+.cabecalho-site {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--verde-principal);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu-navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+}
+
+.marca-site {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--texto-claro);
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.16rem);
+  font-weight: 800;
+}
+
+.logo-agro-icone {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 68% 30%, #9fe38f 0 24%, transparent 26%),
+    radial-gradient(circle at 34% 70%, #c5f0bb 0 24%, transparent 26%),
+    linear-gradient(140deg, #3da15c, #1d7a40);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.lista-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link-menu {
+  display: inline-block;
+  color: var(--texto-claro);
+  font-weight: 600;
+  font-size: clamp(0.92rem, 0.88rem + 0.12vw, 1rem);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+}
+
+.link-menu:hover,
+.link-menu:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.botao-menu-mobile {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: var(--texto-claro);
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}

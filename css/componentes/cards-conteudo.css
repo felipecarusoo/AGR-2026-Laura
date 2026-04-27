@@ -1,0 +1,82 @@
+.filtros-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.botao-filtro {
+  border: 1px solid var(--verde-principal);
+  background: transparent;
+  color: var(--verde-principal);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-filtro.ativo {
+  background: var(--verde-principal);
+  color: var(--texto-claro);
+}
+
+.lista-praticas-dinamica {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.item-pratica {
+  border: 1px solid #b6d4a8;
+  border-left: 5px solid var(--verde-medio);
+  background: #f1fae8;
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+}
+
+.item-pratica h3 {
+  margin: 0 0 0.2rem;
+  color: var(--verde-escuro);
+  font-size: clamp(1rem, 0.94rem + 0.25vw, 1.14rem);
+}
+
+.grade-cards-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.cartao-conteudo {
+  background: linear-gradient(160deg, #7b4014, #3b1d0b);
+  color: var(--texto-claro);
+  border-radius: 14px;
+  padding: 1rem;
+  min-height: 220px;
+}
+
+.cartao-conteudo h4 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.05rem, 0.98rem + 0.3vw, 1.2rem);
+}
+
+.cartao-conteudo p {
+  max-width: 68ch;
+  font-size: var(--fonte-texto);
+  line-height: var(--altura-linha-texto);
+}
+
+.botao-saiba-mais {
+  margin-top: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  color: var(--texto-claro);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.conteudo-extra {
+  margin-top: 0.55rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.45);
+  padding-top: 0.55rem;
+}

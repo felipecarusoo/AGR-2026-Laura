@@ -320,6 +320,55 @@ function configurarAnimacaoSecoes() {
   elementosAnimados.forEach((elemento) => observador.observe(elemento));
 }
 
+/**
+ * Flash cards — mesmo modelo do projeto "A diretora mandou":
+ * createElement, innerHTML, variavel booleana, viraCartao + classList.toggle("active").
+ */
+function criaCartao(categoria, pergunta, resposta) {
+  let container = document.getElementById("container-beneficios-sustentavel");
+  if (!container) return;
+
+  let cartao = document.createElement("article");
+  const ordemCartao = container.querySelectorAll(".cartao-beneficio").length;
+  const classeAnimacao = ordemCartao % 2 === 0 ? "animar-entrada-esquerda" : "animar-entrada-direita";
+  cartao.className = `cartao-beneficio ${classeAnimacao}`;
+
+  cartao.innerHTML = `
+    <div class="miolo-cartao-beneficio">
+      <div class="face-beneficio frente-beneficio">
+        <span class="categoria-beneficio">${categoria}</span>
+        <h3 class="titulo-cartao-beneficio">${pergunta}</h3>
+        <span class="dica-virar-beneficio">Clique para ver o beneficio</span>
+      </div>
+      <div class="face-beneficio verso-beneficio">
+        <p class="texto-verso-beneficio">${resposta}</p>
+      </div>
+    </div>
+  `;
+
+  let respostaEstaVisivel = false;
+
+  function viraCartao() {
+    respostaEstaVisivel = !respostaEstaVisivel;
+    cartao.classList.toggle("active", respostaEstaVisivel);
+    cartao.setAttribute("aria-expanded", respostaEstaVisivel ? "true" : "false");
+  }
+
+  cartao.addEventListener("click", viraCartao);
+
+  cartao.addEventListener("keydown", (evento) => {
+    if (evento.key !== "Enter" && evento.key !== " ") return;
+    evento.preventDefault();
+    viraCartao();
+  });
+
+  cartao.setAttribute("tabindex", "0");
+  cartao.setAttribute("role", "button");
+  cartao.setAttribute("aria-expanded", "false");
+
+  container.appendChild(cartao);
+}
+
 function configurarGaleriaCompromisso() {
   const imagemPrincipal = document.getElementById("imagem-principal-compromisso");
   const miniaturas = document.querySelectorAll(".miniatura-compromisso");
@@ -385,5 +434,25 @@ ativarScrollSuave();
 controlarBotaoTopo();
 configurarMenuMobile();
 configurarCarrossel();
+
+/* Chamadas explicitas (estilo perguntas.js do projeto A diretora mandou) */
+criaCartao(
+  "01",
+  "Preservacao do meio ambiente",
+  "Reduz a degradacao do solo, a poluicao da agua e o desmatamento, mantendo os recursos naturais para o futuro."
+);
+
+criaCartao(
+  "02",
+  "Conservacao dos recursos naturais",
+  "A agricultura sustentavel usa agua e solo de forma consciente, evitando desperdicios e garantindo sua preservacao para o futuro."
+);
+
+criaCartao(
+  "03",
+  "Sustentabilidade economica",
+  "A longo prazo, reduz custos de producao e garante a produtividade da terra por mais tempo, beneficiando os agricultores."
+);
+
 configurarAnimacaoSecoes();
 configurarGaleriaCompromisso();

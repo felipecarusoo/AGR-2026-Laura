@@ -16,6 +16,21 @@
   --fonte-titulo-secao: clamp(1.95rem, 1.5rem + 1.8vw, 3.15rem);
   --fonte-subtitulo: clamp(1.4rem, 1.2rem + 0.8vw, 2rem);
   --altura-linha-texto: 1.62;
+  --raio-painel: 14px;
+  --raio-card: 12px;
+  --espaco-secao-horizontal: clamp(1rem, 2vw, 2rem);
+  --espaco-painel: 1rem;
+  /* Painéis claros: tom menos “neon”, melhor separação do fundo em gradiente */
+  --fundo-painel-suave: #dcf2c4;
+  --texto-painel: #0f1a0d;
+  --borda-painel-azul: #7f3a1f;
+  --sombra-painel-suave: 0 6px 22px rgba(12, 42, 18, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.52);
+  --sombra-cartao-claro: 0 4px 14px rgba(14, 48, 22, 0.09);
+  --borda-cartao-suave: #aed09a;
+  --cor-acao-marrom: #7f3a1f;
+  --cor-acao-marrom-hover: #652c14;
+  --cor-destaque-verde: #0f7f3b;
 }
 
 * {
@@ -100,7 +115,7 @@ a {
   padding: 0;
   font-weight: 700;
   width: fit-content;
-  color: #111111;
+  color: var(--texto-principal);
   font-size: clamp(0.95rem, 0.88rem + 0.25vw, 1.08rem);
   line-height: 1.35;
   align-self: center;

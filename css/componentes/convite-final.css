@@ -4,7 +4,7 @@
   margin-right: calc(50% - 50vw);
   background: linear-gradient(180deg, #e8ffca 0%, #ddf5bb 55%, #d0eab0 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -10px 18px rgba(35, 72, 30, 0.09);
-  padding: 1.4rem clamp(1rem, 2vw, 2rem);
+  padding: 1.4rem var(--espaco-secao-horizontal);
 }
 
 .conteudo-convite-futuro {
@@ -27,7 +27,7 @@
 .titulo-convite-futuro {
   margin: 0 0 0.55rem;
   max-width: 16ch;
-  color: #111111;
+  color: var(--texto-principal);
   font-size: clamp(2.1rem, 1.85rem + 1.2vw, 3.4rem);
   line-height: 1.12;
   font-weight: 900;
@@ -44,9 +44,9 @@
 .link-convite-futuro {
   margin-top: auto;
   align-self: center;
-  border: 1px solid #7f3a1f;
+  border: 1px solid var(--cor-acao-marrom);
   border-radius: 10px;
-  background: #7f3a1f;
+  background: var(--cor-acao-marrom);
   color: #ffffff;
   text-decoration: none;
   font-size: clamp(1.02rem, 0.98rem + 0.14vw, 1.1rem);
@@ -56,6 +56,6 @@
 
 .link-convite-futuro:hover,
 .link-convite-futuro:focus-visible {
-  background: #652c14;
+  background: var(--cor-acao-marrom-hover);
   outline: none;
 }

@@ -1,7 +1,7 @@
 .carrossel-banner {
   position: relative;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   min-height: clamp(340px, 60vh, 640px);
   box-shadow: var(--sombra-card);
   background: #103f21;
@@ -18,7 +18,7 @@
 
 .slide-banner img {
   height: 100%;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   filter: saturate(1.02) contrast(1.02);
 }
 
@@ -26,7 +26,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.58) 0%,

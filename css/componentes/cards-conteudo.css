@@ -48,7 +48,7 @@
 .cartao-conteudo {
   background: linear-gradient(160deg, #7b4014, #3b1d0b);
   color: var(--texto-claro);
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   padding: 1rem;
   min-height: 220px;
 }

@@ -10,7 +10,7 @@
   border: none;
   border-radius: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -10px 20px rgba(33, 70, 30, 0.08);
-  padding: 1rem clamp(1rem, 2vw, 2rem);
+  padding: 1rem var(--espaco-secao-horizontal);
 }
 
 .titulo-compromisso {
@@ -26,7 +26,7 @@
 }
 
 .bloco-imagem-compromisso {
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   overflow: hidden;
 }
 
@@ -34,14 +34,15 @@
   height: 100%;
   min-height: 360px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
 }
 
 .painel-compromisso {
-  border: 2px solid #1b6f9a;
-  border-radius: 14px;
-  background: #ffffff;
-  padding: 0.95rem;
+  border: 2px solid var(--borda-painel-azul);
+  border-radius: var(--raio-painel);
+  background: var(--fundo-painel-suave);
+  box-shadow: var(--sombra-painel-suave);
+  padding: var(--espaco-painel);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,7 +67,7 @@
 
 .cartao-info p {
   margin: 0;
-  color: var(--texto-principal);
+  color: var(--texto-painel);
   font-size: var(--fonte-texto);
   line-height: 1.72;
   text-align: justify;
@@ -85,13 +86,13 @@
 
 .cartao-acao-compromisso {
   margin-top: 0.75rem;
-  border-top: 1px dashed #89b8cc;
+  border-top: 1px dashed rgba(127, 58, 31, 0.6);
   padding-top: 0.65rem;
 }
 
 .cartao-acao-compromisso p {
   margin: 0;
-  color: var(--texto-principal);
+  color: var(--texto-painel);
   font-size: var(--fonte-texto);
   line-height: 1.72;
   text-align: justify;
@@ -124,7 +125,7 @@
   border: none;
   border-radius: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(40, 78, 33, 0.08);
-  padding: 1rem clamp(1rem, 2vw, 2rem);
+  padding: 1rem var(--espaco-secao-horizontal);
 }
 
 .titulo-agricultura-familiar {
@@ -136,7 +137,7 @@
   margin: 0 auto 0.9rem;
   max-width: 95ch;
   text-align: justify;
-  color: #111111;
+  color: var(--texto-principal);
   font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.22rem);
   line-height: 1.7;
   font-weight: 500;
@@ -149,9 +150,10 @@
 }
 
 .cartao-agricultura {
-  background: #f4faeb;
-  border: 1px solid #c8e0b7;
-  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--borda-cartao-suave);
+  border-radius: var(--raio-card);
+  box-shadow: var(--sombra-cartao-claro);
   padding: 0.85rem;
 }
 
@@ -165,6 +167,7 @@
 
 .cartao-agricultura p {
   margin: 0;
+  color: var(--texto-painel);
   font-size: clamp(1rem, 0.96rem + 0.22vw, 1.12rem);
   line-height: 1.65;
   text-align: justify;
@@ -177,7 +180,7 @@
   padding: 0.2rem 0.48rem;
   font-size: 0.82rem;
   font-weight: 700;
-  background: #0f7f3b;
+  background: var(--cor-destaque-verde);
   color: #ffffff;
 }
 
@@ -190,7 +193,7 @@
   border: none;
   border-radius: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(39, 77, 32, 0.08);
-  padding: 1rem clamp(1rem, 2vw, 2rem);
+  padding: 1rem var(--espaco-secao-horizontal);
 }
 
 .grade-pilares-futuro {
@@ -201,10 +204,11 @@
 }
 
 .painel-pilares-futuro {
-  border: 2px solid #1b6f9a;
-  border-radius: 14px;
-  background: #ffffff;
-  padding: 1rem;
+  border: 2px solid var(--borda-painel-azul);
+  border-radius: var(--raio-painel);
+  background: var(--fundo-painel-suave);
+  box-shadow: var(--sombra-painel-suave);
+  padding: var(--espaco-painel);
 }
 
 .painel-pilares-futuro h2 {
@@ -221,14 +225,14 @@
 
 .painel-pilares-futuro li {
   margin: 0.22rem 0;
-  color: var(--texto-principal);
+  color: var(--texto-painel);
   font-size: clamp(1.08rem, 1rem + 0.28vw, 1.24rem);
   line-height: 1.42;
 }
 
 .painel-pilares-futuro p {
   margin: 0;
-  color: var(--texto-principal);
+  color: var(--texto-painel);
   font-size: var(--fonte-texto);
   line-height: 1.72;
   text-align: justify;
@@ -240,7 +244,7 @@
   height: 100%;
   min-height: 360px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
 }
 
 .secao-solucoes-energeticas {
@@ -252,7 +256,7 @@
   border: none;
   border-radius: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), inset 0 -9px 18px rgba(39, 77, 32, 0.08);
-  padding: 1rem clamp(1rem, 2vw, 2rem);
+  padding: 1rem var(--espaco-secao-horizontal);
 }
 
 .grade-solucoes-energeticas {
@@ -263,10 +267,11 @@
 }
 
 .painel-solucoes-energeticas {
-  border: 2px solid #1b6f9a;
-  border-radius: 14px;
-  background: #ffffff;
-  padding: 1rem;
+  border: 2px solid var(--borda-painel-azul);
+  border-radius: var(--raio-painel);
+  background: var(--fundo-painel-suave);
+  box-shadow: var(--sombra-painel-suave);
+  padding: var(--espaco-painel);
 }
 
 .painel-solucoes-energeticas h2 {
@@ -285,7 +290,7 @@
 
 .painel-solucoes-energeticas p {
   margin: 0;
-  color: var(--texto-principal);
+  color: var(--texto-painel);
   font-size: var(--fonte-texto);
   line-height: 1.68;
   text-align: justify;
@@ -296,7 +301,7 @@
   height: 100%;
   min-height: 360px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
 }
 
 .secao-beneficios-sustentavel {
@@ -304,7 +309,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   background: linear-gradient(180deg, #8aac69 0%, #7ca05b 45%, #6f944f 100%);
-  padding: 1.5rem clamp(1rem, 2vw, 2rem);
+  padding: 1.5rem var(--espaco-secao-horizontal);
 }
 
 .conteudo-beneficios-sustentavel {
@@ -326,24 +331,93 @@
 }
 
 .cartao-beneficio {
+  position: relative;
   background: #6f3a12;
   border-radius: 16px;
-  padding: 1rem 0.95rem 0.85rem;
+  border: 2px solid rgba(255, 255, 255, 0.28);
   min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
   color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
-.cartao-beneficio h3 {
-  margin: 0 0 0.55rem;
+.cartao-beneficio:hover {
+  transform: translateY(-3px);
+  border-color: #ffe270;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.28);
+}
+
+.cartao-beneficio:focus-visible {
+  outline: 3px solid #ffe270;
+  outline-offset: 3px;
+}
+
+.miolo-cartao-beneficio {
+  position: relative;
+  min-height: 350px;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+}
+
+.face-beneficio {
+  position: absolute;
+  inset: 0;
+  padding: 1rem 0.95rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.frente-beneficio {
+  transform: rotateY(0deg);
+}
+
+.categoria-beneficio {
+  font-size: clamp(0.95rem, 0.9rem + 0.15vw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.titulo-cartao-beneficio {
+  margin: 0;
   font-size: clamp(1.2rem, 1.1rem + 0.35vw, 1.45rem);
   line-height: 1.28;
 }
 
-.cartao-beneficio p {
+.dica-virar-beneficio {
+  font-size: clamp(0.92rem, 0.88rem + 0.14vw, 1rem);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.verso-beneficio {
+  transform: rotateY(180deg);
+}
+
+.cartao-beneficio.active {
+  border-width: 3px;
+  border-color: #ffda58;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.34), 0 0 0 2px rgba(255, 218, 88, 0.32);
+  transform: translateY(-4px);
+}
+
+.cartao-beneficio.active .miolo-cartao-beneficio {
+  transform: rotateY(180deg);
+}
+
+.texto-verso-beneficio {
   margin: 0;
   font-size: clamp(1.03rem, 0.98rem + 0.2vw, 1.16rem);
   line-height: 1.55;
@@ -351,27 +425,8 @@
   text-align: center;
 }
 
-.botao-beneficio {
-  margin: 0.8rem auto 0;
-  width: 56px;
-  height: 34px;
-  border: none;
-  border-radius: 999px;
-  background: #a68a24;
-  color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.botao-beneficio:hover,
-.botao-beneficio:focus-visible {
-  background: #8c741b;
-  outline: none;
+.verso-beneficio .texto-verso-beneficio {
+  align-self: center;
 }
 
 .secao-pesquisa-praticas {
@@ -379,7 +434,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   background: linear-gradient(180deg, #e4ffc4 0%, #daf6b5 52%, #c7e89f 100%);
-  padding: 1.5rem clamp(1rem, 2vw, 2rem);
+  padding: 1.5rem var(--espaco-secao-horizontal);
 }
 
 .grade-pesquisa-praticas {
@@ -392,9 +447,10 @@
 }
 
 .bloco-texto-pesquisa {
-  border: 2px solid #1b6f9a;
-  border-radius: 14px;
-  background: #e8ffca;
+  border: 2px solid var(--borda-painel-azul);
+  border-radius: var(--raio-painel);
+  background: var(--fundo-painel-suave);
+  box-shadow: var(--sombra-painel-suave);
   min-height: 360px;
   padding: 1.15rem;
   display: flex;
@@ -404,14 +460,14 @@
 
 .bloco-texto-pesquisa h2 {
   margin: 0 0 0.55rem;
-  color: #162a12;
+  color: var(--verde-escuro);
   font-size: clamp(1.3rem, 1.15rem + 0.55vw, 1.75rem);
   line-height: 1.24;
 }
 
 .bloco-texto-pesquisa p {
   margin: 0 0 1rem;
-  color: #192414;
+  color: var(--texto-painel);
   font-size: clamp(1.25rem, 1.13rem + 0.35vw, 1.5rem);
   line-height: 1.5;
   text-align: left;
@@ -419,9 +475,9 @@
 
 .botao-participar-pesquisa {
   align-self: center;
-  border: 1px solid #7f3a1f;
+  border: 1px solid var(--cor-acao-marrom);
   border-radius: 10px;
-  background: #7f3a1f;
+  background: var(--cor-acao-marrom);
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
@@ -430,7 +486,7 @@
 
 .botao-participar-pesquisa:hover,
 .botao-participar-pesquisa:focus-visible {
-  background: #652c14;
+  background: var(--cor-acao-marrom-hover);
   outline: none;
 }
 
@@ -440,7 +496,7 @@
   min-height: 480px;
   max-height: 480px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
   border: 2px solid rgba(126, 79, 168, 0.45);
 }
 
@@ -450,7 +506,7 @@
   margin-right: calc(50% - 50vw);
   background: linear-gradient(180deg, #87aa64 0%, #5f8547 42%, #355528 100%);
   border-radius: 0;
-  padding: 1.45rem clamp(1rem, 2vw, 2rem);
+  padding: 1.45rem var(--espaco-secao-horizontal);
 }
 
 .grade-producao-consciente {
@@ -467,7 +523,7 @@
   height: 100%;
   min-height: 360px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--raio-painel);
 }
 
 .bloco-texto-producao {
@@ -511,7 +567,7 @@
 
 .miniatura-compromisso {
   border: 2px solid transparent;
-  border-radius: 10px;
+  border-radius: var(--raio-card);
   padding: 0;
   background: transparent;
   cursor: pointer;
@@ -520,19 +576,19 @@
 
 .miniatura-compromisso:hover,
 .miniatura-compromisso:focus-visible {
-  border-color: #1b6f9a;
+  border-color: #ffda58;
   transform: translateY(-1px);
   outline: none;
 }
 
 .miniatura-compromisso.ativa {
-  border-color: #0f7f3b;
+  border-color: var(--cor-destaque-verde);
 }
 
 .miniatura-compromisso img {
   width: 100%;
   height: 90px;
   object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid #b9d6e5;
+  border-radius: var(--raio-card);
+  border: 1px solid rgba(127, 58, 31, 0.45);
 }
